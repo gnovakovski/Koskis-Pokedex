@@ -69,6 +69,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/txtAltura"
         android:layout_width="wrap_content"
@@ -76,8 +77,9 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/txtPeso" />
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/txtPeso"
+        app:layout_constraintTop_toTopOf="@+id/textView2" />
 
     <TextView
         android:id="@+id/txtPeso"
@@ -97,6 +99,19 @@
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
         android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView4"
-        app:layout_constraintStart_toEndOf="@+id/textView4" />
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <ImageButton
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="?attr/actionModeShareDrawable"
+        tools:layout_editor_absoluteX="333dp"
+        tools:layout_editor_absoluteY="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgFoto"
+        app:layout_constraintStart_toEndOf="@+id/txtNome"
+        app:layout_constraintTop_toTopOf="@+id/txtNome"/>
+
 </android.support.constraint.ConstraintLayout>

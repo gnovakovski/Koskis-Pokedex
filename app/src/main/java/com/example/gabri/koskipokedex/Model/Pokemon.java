@@ -1,10 +1,12 @@
 package com.example.gabri.koskipokedex.Model;
 
+import java.util.ArrayList;
+
 public class Pokemon {
 
     String nome, altura, peso, url;
     String foto;
-    String[] habilidades;
+    ArrayList<String> habilidades;
 
     public String getNome() {
         return nome;
@@ -38,11 +40,11 @@ public class Pokemon {
         this.foto = foto;
     }
 
-    public String[] getHabilidades() {
+    public ArrayList<String> getHabilidades() {
         return habilidades;
     }
 
-    public void setHabilidades(String[] habilidades) {
+    public void setHabilidades(ArrayList<String> habilidades) {
         this.habilidades = habilidades;
     }
 

@@ -23,6 +23,7 @@ public class ListaPokemonActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_pokemon);
+        getSupportActionBar().setTitle("Escolha o Pokémon");
         url = (String)getIntent().getSerializableExtra("url");
         Download download = new Download();
 

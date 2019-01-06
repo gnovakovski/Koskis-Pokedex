@@ -99,10 +99,15 @@ public class Utils {
             pokeObj.setNome(nome);
             pokeObj.setAltura(altura);
             pokeObj.setPeso(peso);
-            //JSONObject jsonObj3 = new JSONObject(json);
-            //JSONArray array3 = jsonObj3.getJSONArray("abilities");
-            //tipoObj.setHabilidades(array3);
-            JSONObject sprites = jsonObj.getJSONObject("sprites");
+            JSONArray array = jsonObj.getJSONArray("abilities");
+            ArrayList<String> abis = new ArrayList<>();
+            for(int i = 0 ; i < array.length() ; i++) {
+                JSONObject obj = array.getJSONObject(i);
+                JSONObject ability = obj.getJSONObject("ability");
+                abis.add(ability.getString("name"));
+            }
+            pokeObj.setHabilidades(abis);
+                JSONObject sprites = jsonObj.getJSONObject("sprites");
             String foto = sprites.getString("front_default");
             pokeObj.setFoto(foto);
 
