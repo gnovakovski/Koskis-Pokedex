@@ -8,7 +8,7 @@
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
-    tools:context="com.example.gabri.koskispokedex.View.ActivityListaPokemon">
+    tools:context="com.example.gabri.koskispokedex.View.ListaPokemonActivity">
 
     <ListView
         android:id="@+id/listaPokemons"
