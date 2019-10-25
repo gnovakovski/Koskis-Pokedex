@@ -12,10 +12,10 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.gabri.koskipokedex.R;
 import com.example.gabri.koskispokedex.Controller.TipoAdapter;
 import com.example.gabri.koskispokedex.Controller.Utils;
 import com.example.gabri.koskispokedex.Model.Tipo;
-import com.example.gabri.koskispokedex.R;
 
 import java.util.ArrayList;
 import java.util.List;
