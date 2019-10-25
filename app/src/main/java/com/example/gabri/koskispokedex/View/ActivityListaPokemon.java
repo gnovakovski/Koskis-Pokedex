@@ -9,10 +9,10 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.example.gabri.koskipokedex.R;
 import com.example.gabri.koskispokedex.Controller.PokeAdapter;
 import com.example.gabri.koskispokedex.Controller.Utils;
 import com.example.gabri.koskispokedex.Model.Pokemon;
-import com.example.gabri.koskispokedex.R;
 
 import java.util.List;
 

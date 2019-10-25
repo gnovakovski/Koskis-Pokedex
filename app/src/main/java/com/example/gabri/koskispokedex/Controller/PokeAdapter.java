@@ -7,9 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import com.example.gabri.koskipokedex.R;
 import com.example.gabri.koskispokedex.Model.Pokemon;
-import com.example.gabri.koskispokedex.Model.Tipo;
-import com.example.gabri.koskispokedex.R;
 
 import java.util.List;
 

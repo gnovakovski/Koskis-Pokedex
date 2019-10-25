@@ -5,10 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.gabri.koskipokedex.R;
 import com.example.gabri.koskispokedex.Model.Tipo;
-import com.example.gabri.koskispokedex.R;
 
 import java.util.ArrayList;
 import java.util.List;
