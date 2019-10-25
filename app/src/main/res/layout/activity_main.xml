@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:paddingBottom="0dp"
     android:paddingLeft="0dp"
+    android:background="@color/dark"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     tools:context=".View.MainActivity">
