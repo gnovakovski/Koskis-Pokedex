@@ -35,17 +35,6 @@ public class Utils {
                 tipoObj.setUrl(array.getJSONObject(i).getString("url"));
                 tipo.add(tipoObj);
             }
-
-
-            //JSONObject objArray = array.getJSONObject(0);
-
-            //JSONObject obj = objArray.getJSONObject("");
-            //tipo.setName(obj.getString("name"));
-            //tipo.setUrl(obj.getString("url"));
-
-
-
-
             return tipo;
         }catch (JSONException e){
             e.printStackTrace();
@@ -76,27 +65,8 @@ public class Utils {
                 JSONObject poke = pokea.getJSONObject("pokemon");
                 tipoObj.setNome(poke.getString("name"));
                 tipoObj.setUrl(poke.getString("url"));
-                //tipoObj.setAltura(array.getJSONObject(i).getString("height"));
-                //tipoObj.setPeso(array.getJSONObject(i).getString("weight"));
-                //JSONObject jsonObj3 = new JSONObject(json);
-                //JSONArray array3 = jsonObj3.getJSONArray("abilities");
-                //tipoObj.setHabilidades(array3);
-                //JSONObject jsonObj2 = new JSONObject(json);
-                //JSONArray array2 = jsonObj2.getJSONArray("sprites");
-                //tipoObj.setFoto(array2.getJSONObject(i).getString("front_default"));
                 pokemon.add(tipoObj);
             }
-
-
-            //JSONObject objArray = array.getJSONObject(0);
-
-            //JSONObject obj = objArray.getJSONObject("");
-            //tipo.setName(obj.getString("name"));
-            //tipo.setUrl(obj.getString("url"));
-
-
-
-
             return pokemon;
         }catch (JSONException e){
             e.printStackTrace();
@@ -124,9 +94,6 @@ public class Utils {
             pokeObj.setNome(jsonObj.getString("name"));
             pokeObj.setAltura(jsonObj.getString("height"));
             pokeObj.setPeso(jsonObj.getString("weight"));
-                //JSONObject jsonObj3 = new JSONObject(json);
-                //JSONArray array3 = jsonObj3.getJSONArray("abilities");
-                //tipoObj.setHabilidades(array3);
             JSONArray sprites = jsonObj.getJSONArray("sprites");
             pokeObj.setFoto(sprites.getJSONObject(0).getString("front_default"));
 
