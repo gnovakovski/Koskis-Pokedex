@@ -29,7 +29,7 @@ public class ActivityListaPokemon extends AppCompatActivity {
         //Chama a Async Task para procurar os Pokemons
         download.execute();
 
-        final ListView lista = (ListView) findViewById(R.id.listaPokemons);
+        final ListView lista = findViewById(R.id.listaPokemons);
         lista.setOnItemClickListener(new ListView.OnItemClickListener() {
 
             @Override
@@ -62,7 +62,7 @@ public class ActivityListaPokemon extends AppCompatActivity {
 
 
             PokeAdapter adapter = new PokeAdapter(ActivityListaPokemon.this, pokemons);
-                ListView lista = (ListView) findViewById(R.id.listaPokemons);
+                ListView lista = findViewById(R.id.listaPokemons);
                 lista.setAdapter(adapter);
                 load.dismiss();
             }
